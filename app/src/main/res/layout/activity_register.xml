@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="120"
+    android:background="@drawable/b_register">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="#fff"
+        android:text="Register"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/PaddingBox"
+            android:paddingRight="@dimen/PaddingBox"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:padding="5dp"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/user"
+                    android:tint="#d4d4d4"/>
+
+                <EditText
+                    android:id="@+id/Reg_edtUser"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"
+                    android:paddingLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:windowSoftInputMode="adjustPan"
+                    android:textColorHint="@color/HintColor"
+                    android:textColor="#fff"
+                    android:hint="Username"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:background="#d4d4d4">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="@dimen/PaddingBox"
+            android:paddingRight="@dimen/PaddingBox"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ImageView
+                    android:id="@+id/df"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:padding="5dp"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/password"
+                    android:tint="#d4d4d4"/>
+
+                <EditText
+                    android:id="@+id/Reg_edtPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"
+                    android:paddingLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:windowSoftInputMode="adjustPan"
+                    android:textColorHint="@color/HintColor"
+                    android:textColor="#fff"
+                    android:hint="Password"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:background="#d4d4d4">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="@dimen/PaddingBox"
+            android:paddingRight="@dimen/PaddingBox"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ImageView
+                    android:id="@+id/fdgdfg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:padding="5dp"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/password"
+                    android:tint="#d4d4d4"/>
+
+                <EditText
+                    android:id="@+id/Reg_edtRepeatPass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"
+                    android:paddingLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:windowSoftInputMode="adjustResize"
+                    android:textColorHint="@color/HintColor"
+                    android:textColor="#fff"
+                    android:hint="Repeat Password"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:background="#d4d4d4">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Register_btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"
+            android:onClick="btnClick"
+            android:textColor="#fff"
+            android:text="Register"/>
+    </LinearLayout>
+
+</LinearLayout>

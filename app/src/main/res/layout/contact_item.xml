@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lnrRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/famili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_user"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_user"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/item"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/emailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:text="TextView"
+            android:textAppearance="@style/Base.DialogWindowTitle.AppCompat"
+            android:textColor="#FFF"
+            android:textSize="17sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:gravity="center_vertical|left"
+                android:text="TextView"
+                android:textColor="#FFF"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                />
+
+            <TextView
+                android:id="@+id/mobileNumber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:gravity="center_vertical|right"
+                android:paddingRight="1dp"
+                android:paddingLeft="1dp"
+                android:text="TextView"
+                android:textColor="#FFF"
+                android:layout_gravity="right"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
